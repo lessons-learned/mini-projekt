@@ -575,6 +575,151 @@ video {
   border-color: rgba(229, 231, 235, var(--tw-border-opacity));
 }
 
+@font-face {
+  font-family: "AllianceNo1-Regular";
+
+  src: url('../fonts/Alliance/AllianceNo1-Regular.woff2') format('woff2'), url('webFonts/Alliance/AllianceNo1-Regular.woff') format('woff');
+}
+
+p.large {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  line-height: 2.5rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding-bottom: 4rem;
+  font-family: 'AllianceNo1-Regular',
+            system-ui,
+        		-apple-system, /* Firefox supports this but not yet `system-ui` */
+        		'Segoe UI',
+        		Roboto,
+        		Helvetica,
+        		Arial,
+        		sans-serif,
+        		'Apple Color Emoji',
+        		'Segoe UI Emoji';
+  color: #637381;
+}
+
+p.large a {
+  color: #212B36;
+}
+
+p.large a:hover {
+  color: #22863A;
+}
+
+p.large a[href^='https://'] {
+  background: url('../img/icons/external-link.svg') right 8px no-repeat;
+  background-size: 16px auto;
+  padding-right: 20px;
+}
+
+p.large sup {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  padding: 0.125rem;
+  display: inline-block;
+  font-family: "Space Mono";
+  font-size: 16px;
+  top: -14px;
+}
+
+section {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: baseline;
+}
+
+section.pb-48 {
+  border-bottom: 1px solid #000000;
+}
+
+section.pb-48:last-of-type {
+  border-bottom: none;
+}
+
+section h2 {
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: 600;
+  font-family: 'Space Grotesk',
+    		system-ui,
+    		-apple-system, /* Firefox supports this but not yet `system-ui` */
+    		'Segoe UI',
+    		Roboto,
+    		Helvetica,
+    		Arial,
+    		sans-serif,
+    		'Apple Color Emoji',
+    		'Segoe UI Emoji';
+  line-height: 3.75em;
+  display: inline-block;
+  width: 100%;
+  min-width: 200px;
+  max-width: 320px;
+}
+
+section .listing {
+  display: flex;
+  flex-flow: col nowrap;
+  align-items: stretch;
+  width: 100%;
+}
+
+section .listing .col {
+  display: block;
+  width: 100%;
+  min-width: 350px;
+}
+
+section .listing p {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.625;
+  padding-top: 0.75rem;
+  font-family: 'AllianceNo1-Regular',
+            system-ui,
+        		-apple-system, /* Firefox supports this but not yet `system-ui` */
+        		'Segoe UI',
+        		Roboto,
+        		Helvetica,
+        		Arial,
+        		sans-serif,
+        		'Apple Color Emoji',
+        		'Segoe UI Emoji';
+  width: calc(100% - 24px);
+}
+
+section .listing p a {
+  padding-bottom: 0.5rem;
+  display: block;
+  border-bottom: 1px solid #000000;
+}
+
+section .listing p a:hover {
+  color: #22863A;
+  border-color: #22863A;
+}
+
+section .listing p a[href^='https://'] {
+  background: url('../img/icons/external-link.svg') right center no-repeat;
+  background-size: 16px auto;
+  padding-right: 20px;
+}
+
+section .listing code {
+  width: 3rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  display: inline-block;
+  letter-spacing: .125rem;
+  font-family: 'Space Mono', monospace;
+  color: #454F5B;
+}
+
 .container {
   width: 100%;
 }

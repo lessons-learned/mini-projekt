@@ -1,3 +1,146 @@
-@tailwind base; 
-@tailwind components; 
+@tailwind base;
+@tailwind components;
 @tailwind utilities;
+
+@layer base {
+
+  @font-face {
+    font-family: "AllianceNo1-Regular";
+    src: url('../fonts/Alliance/AllianceNo1-Regular.woff2') format('woff2'), url('webFonts/Alliance/AllianceNo1-Regular.woff') format('woff');
+  }
+
+  p.large {
+    @apply text-3xl;
+    @apply leading-10;
+    @apply antialiased;
+    @apply pb-16;
+    font-family: 'AllianceNo1-Regular',
+            system-ui,
+        		-apple-system, /* Firefox supports this but not yet `system-ui` */
+        		'Segoe UI',
+        		Roboto,
+        		Helvetica,
+        		Arial,
+        		sans-serif,
+        		'Apple Color Emoji',
+        		'Segoe UI Emoji';
+    color: #637381;
+  }
+
+  p.large a {
+    color: #212B36;
+  }
+
+  p.large a:hover {
+    color: #22863A;
+  }
+
+  p.large a[href^='https://'] {
+    background: url('../img/icons/external-link.svg') right 8px no-repeat;
+    background-size: 16px auto;
+    padding-right: 20px;
+  }
+
+
+  p.large sup {
+    @apply text-sm;
+    @apply p-0.5;
+    @apply inline-block;
+    font-family: "Space Mono";
+    font-size: 16px;
+    top: -14px;
+  }
+
+  section {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: baseline;
+  }
+
+  section.pb-48 {
+    border-bottom: 1px solid #000000;
+  }
+
+  section.pb-48:last-of-type {
+    border-bottom: none;
+  }
+
+  section h2 {
+    @apply text-5xl;
+    @apply font-semibold;
+    font-family: 'Space Grotesk',
+    		system-ui,
+    		-apple-system, /* Firefox supports this but not yet `system-ui` */
+    		'Segoe UI',
+    		Roboto,
+    		Helvetica,
+    		Arial,
+    		sans-serif,
+    		'Apple Color Emoji',
+    		'Segoe UI Emoji';
+    line-height: 3.75em;
+    display: inline-block;
+    width: 100%;
+    min-width: 200px;
+    max-width: 320px;
+  }
+
+  section .listing {
+    display: flex;
+    flex-flow: col nowrap;
+    align-items: stretch;
+    width: 100%;
+  }
+
+  section .listing .col {
+    display: block;
+    width: 100%;
+    min-width: 350px;
+  }
+
+  section .listing p {
+    @apply text-xl;
+    @apply antialiased;
+    @apply leading-relaxed;
+    @apply pt-3;
+    font-family: 'AllianceNo1-Regular',
+            system-ui,
+        		-apple-system, /* Firefox supports this but not yet `system-ui` */
+        		'Segoe UI',
+        		Roboto,
+        		Helvetica,
+        		Arial,
+        		sans-serif,
+        		'Apple Color Emoji',
+        		'Segoe UI Emoji';
+    width: calc(100% - 24px);
+  }
+
+  section .listing p a {
+    @apply pb-2;
+    display: block;
+    border-bottom: 1px solid #000000;
+  }
+
+  section .listing p a:hover {
+    color: #22863A;
+    border-color: #22863A;
+  }
+
+  section .listing p a[href^='https://'] {
+    background: url('../img/icons/external-link.svg') right center no-repeat;
+    background-size: 16px auto;
+    padding-right: 20px;
+  }
+
+  section .listing code {
+    @apply w-12;
+    @apply text-base;
+    display: inline-block;
+    letter-spacing: .125rem;
+    font-family: 'Space Mono', monospace;
+    color: #454F5B;
+  }
+
+
+}
